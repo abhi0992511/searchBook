@@ -10,7 +10,7 @@ export const SearchBar = ({ addToBookshelf, bookshelf }) => {
   const getBookData = async (bookname) => {
     if (bookname) {
       const res = await axios.get(
-        `http://openlibrary.org/search.json?q=${bookname}&limit=10&page=1`
+        `https://openlibrary.org/search.json?q=${bookname}&limit=10&page=1`
       );
       setBooks(res.data.docs);
       console.log("Data", res.data.docs);
