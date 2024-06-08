@@ -9,6 +9,12 @@ export const CardShelf = ({ bookshelf, removeFromBookshelf }) => {
         <div className="text-center font-bold text-3xl py-4">
           Empty Bookshelf
         </div>
+        <Link
+        className="text-center px-6 py-3 mt-4 mb-4 font-bold text-lg rounded-md hover:scale-95 transition-all duration-200 bg-yellow-50 text-richblack-800"
+        to="/"
+      >
+        Back to Search
+      </Link>
       </div>
     );
   }
