@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const CardShelf = ({ bookshelf, removeFromBookshelf }) => {
   if (bookshelf.length === 0) {
     return (
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex  flex-col justify-center items-center h-screen">
         <div className="text-center font-bold text-3xl py-4">
           Empty Bookshelf
         </div>
